@@ -1,6 +1,5 @@
 {
   "name": "ntpl",
-  "homepage": "https://rohitkumar-14.github.io/netapram-portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,14 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.2",
     "axios": "^1.6.8",
-    "gh-pages": "^6.3.0",
     "mdb-ui-kit": "^7.2.0",
     "react": "^18.2.0",
     "react-countup": "^6.5.3",
