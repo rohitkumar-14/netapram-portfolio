@@ -1,0 +1,683 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h2{
+  color: #0a4c6f;
+}
+.contact-bg{
+  background: url(./images/contact.jpg);
+}
+.enquiryBtn:hover {
+  transition: all 0.3s ease;
+  background-color: #0a4c6f;
+}
+.learnBtn:hover {
+  transition: all 0.3s ease;
+  background-color: #0a4c6f;
+  color: #fff;
+}
+.registerBtn:hover {
+  transition: all 0.3s ease;
+  background-color: #0a4c6f;
+  color: #fff;
+  
+}
+.registerBtn a{
+  text-decoration: none;
+  color: #fff;
+}
+
+/* nav animation */
+.navbar-nav > li {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-nav > li::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: transparent;
+  transition: width 0.8s ease;
+}
+
+.navbar-nav > li:hover::after {
+  width: 100%;
+  background-color: #0a4c6f;
+}
+/* cursor */
+
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #5caf45;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease;
+}
+
+.cursor::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #0a4c6f;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+/* text animation */
+h1 {
+  font-size: 7vmin;
+  color: #0a4c6f;
+  text-align: left;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  margin: 1rem 0 1rem 0;
+}
+.courses a{
+  text-decoration: none;
+  font-weight: 500;
+  color: #0a4c6f;
+}
+/* Typewriter effect 1 */
+@keyframes typing {
+  0.0000%,
+  27.3488% {
+    content: "";
+  }
+  1.1395%,
+  26.2093% {
+    content: "A";
+  }
+  2.2791%,
+  25.0698% {
+    content: "App";
+  }
+  3.4186%,
+  23.9302% {
+    content: "AppDe";
+  }
+  4.5581%,
+  22.7907% {
+    content: "AppDev";
+  }
+  5.6977%,
+  21.6512% {
+    content: "AppDevel";
+  }
+  6.8372%,
+  20.5116% {
+    content: "AppDevelop";
+  }
+  7.9767%,
+  19.3721% {
+    content: "AppDevelopm";
+  }
+  9.1163%,
+  18.2326% {
+    content: "AppDevelopme";
+  }
+  10.2558%,
+  17.0930% {
+    content: "AppDevelopment";
+  }
+
+  30.7674%,
+  51.2791% {
+    content: "";
+  }
+  31.9070%,
+  50.1395% {
+    content: "We";
+  }
+  33.0465%,
+  49.0000% {
+    content: "WebDe";
+  }
+  34.1860%,
+  47.8605% {
+    content: "WebDeve";
+  }
+  35.3256%,
+  46.7209% {
+    content: "WebDevelo";
+  }
+  36.4651%,
+  45.5814% {
+    content: "WebDevelopm";
+  }
+  37.6047%,
+  44.4419% {
+    content: "WebDevelopment";
+  }
+
+  54.6977%,
+  75.2093% {
+    content: "";
+  }
+  55.8372%,
+  74.0698% {
+    content: "Cy";
+  }
+  56.9767%,
+  72.9302% {
+    content: "Cybe";
+  }
+  58.1163%,
+  71.7907% {
+    content: "CyberSe";
+  }
+  59.2558%,
+  70.6512% {
+    content: "CyberSecu";
+  }
+  60.3953%,
+  69.5116% {
+    content: "CyberSecuri";
+  }
+  61.5349%,
+  68.3721% {
+    content: "CyberSecurity";
+  }
+
+  78.6279%,
+  96.8605% {
+    content: "";
+  }
+  79.7674%,
+  95.7209% {
+    content: "Da";
+  }
+  80.9070%,
+  94.5814% {
+    content: "Data";
+  }
+  82.0465%,
+  93.4419% {
+    content: "DataSc";
+  }
+  83.1860%,
+  92.3023% {
+    content: "DataScie";
+  }
+  84.3256%,
+  91.1628% {
+    content: "DataScience";
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter {
+  color: #5caf45;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 5px solid #5caf45;
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+  border-right: 1ch solid #5caf45;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.shadow-icon {
+  border-radius: 50%;
+  border: 1px solid white;
+  color: white;
+}
+
+.shadow-button:hover,
+.btn-outline:hover,
+.btn-floating:hover {
+  box-shadow: 0 0px 10px rgb(252, 250, 250);
+  
+}
+footer{
+  background-color: #1D303E;
+  color: white;
+}
+/* nav animation */
+footer p > a {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+footer p > a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: transparent;
+  transition: width 0.8s ease;
+}
+
+footer p > a:hover::after {
+  width: 100%;
+  background-color: #ffffff;
+}
+.testimonial-bg {
+  background: url("https://t4.ftcdn.net/jpg/02/02/17/99/360_F_202179910_Uv0HNNaT1LklpUAwfC5eJY3QhGL2IkAc.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+.testimonial-heading{
+  text-shadow: 2px 3px white;
+}
+.testimonial-con{
+  background-color: rgba(255, 255, 255, 0.427);
+}
+.carousel-indicators {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.timeline:before {
+  content: "";
+  background: var(--bs-secondary);
+  width: 5px;
+  height: 95%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.timeline-item:nth-child(even) .timeline-content {
+  float: right;
+  padding: 40px 30px 10px 30px;
+}
+.timeline-item:nth-child(even) .timeline-content .date {
+  right: auto;
+  left: 0;
+}
+.timeline-item:nth-child(even) .timeline-content::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  left: -15px;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent var(--bs-light) transparent transparent;
+}
+.timeline-item::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 10px 30px;
+  border-radius: 4px;
+  background: var(--bs-light);
+}
+.timeline-content::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  right: -15px;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent var(--bs-light);
+}
+.timeline-img {
+  width: 30px;
+  height: 30px;
+  background: var(--bs-secondary);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -15px;
+}
+@media screen and (max-width: 768px) {
+  .timeline::before {
+    left: 50px;
+  }
+  .timeline .timeline-img {
+    left: 50px;
+  }
+  .timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 70px;
+  }
+  .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+  }
+  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent transparent;
+  }
+}
+.grid-wrapper > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-wrapper > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.grid-wrapper > div > img:hover {
+  transform: scale(1.1);
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+}
+.grid-wrapper .wide {
+  grid-column: span 2;
+}
+.grid-wrapper .tall {
+  grid-row: span 2;
+}
+.grid-wrapper .big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.cardLife:hover {
+  border-radius: 20px;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.392);
+}
+
+/* projects2 */
+/* The actual timeline (the vertical ruler) */
+.main-timeline-2 {
+  position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-2::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #26c6da;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-2 {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-2::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -11px;
+  background-color: #26c6da;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left-2 {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+/* Place the container to the right */
+.right-2 {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left-2::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right-2::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right-2::after {
+  left: -14px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .main-timeline-2::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline-2 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-2::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left-2::after,
+  .right-2::after {
+    left: 18px;
+  }
+}
+.product {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 400px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background: #0e0e0f;
+  overflow: hidden;
+}
+.product .imgbox {
+  height: 100%;
+  box-sizing: border-box;
+}
+.product .imgbox img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.specifies {
+  position: absolute;
+  width: 100%;
+  bottom: -200px;
+  background: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.product:hover .specifies {
+  bottom: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7); /* White color with opacity */
+}
+.about{
+  width: 100%;
+  height: 50vh;
+  background: url("https://netparam.in/uploads/banners/strategy.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.number {
+  display: flex;
+ 
+  align-items: center;
+  
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+
+.number .counter {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2rem;
+  margin: 6px 0;
+}
+.number span {
+  font-size: 1rem;
+  display: block;
+}
+
+.keepTouch:hover{
+    transition: all 0.3s ease;
+    background-color: #0a4c6f;
+    color: #fff;
+  }
+.tagAbout{
+  /* color: #0a4c6f; */
+  
+  background: url("https://politicalbaaba.files.wordpress.com/2013/06/indian-flag-tri-color-graphics-design-drawing-cool-facebook-timeline-covers2.jpg");
+  background-position: 40% 60%;
+  background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.192);
+  animation: slideUp 5s ease;
+  font-size: 100px;
+
+  
+}
+/* .overlay{
+  width: 100%;
+  height: 70vh;
+  background-color: #ffffff81;
+} */
+/* .overlay h1{
+  background: url("https://politicalbaaba.files.wordpress.com/2013/06/indian-flag-tri-color-graphics-design-drawing-cool-facebook-timeline-covers2.jpg");
+  background-position: 40% 60%;
+  background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.227);
+  animation: slideUp 12s ease;
+  font-size: 130px;
+  
+} */
+@keyframes slideUp{
+  from{
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity:1;
+  }
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 30px 50px;
+}
+
+.counter {
+  font-size: 60px;
+  margin-top: 10px;
+}
+
+@media (max-width: 580px) {
+  body {
+    flex-direction: column;
+  }
+}
